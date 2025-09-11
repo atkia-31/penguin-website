@@ -34,9 +34,7 @@ body {
         justify-content: center;
     }
 
-    .toggle-menu {
-        display: none;
-    }
+    .toggle-menu {}
 
     .toggle-menu svg {
         width: 30px;
