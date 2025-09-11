@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu ul li a:hover {
+    background-color: black;
+    color: goldenrod;
+}
+
+.totop {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+    display: none;
+}
+
+/* responsive */
+
+@media (max-width:767px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .logo {
+        text-align: center;
+        margin-bottom: 31px;
+    }
+
+    .main-menu ul {
+        justify-content: center;
+    }
+
+    .toggle-menu {
+        display: none;
+    }
+
+    .toggle-menu svg {
+        width: 30px;
+    }
+}
+
+@media (max-width:343px) {
+    .main-menu ul {
+        flex-direction: column;
+    }
+
+    .main-menu ul li a {
+        display: block;
+    }
+
+    .toggle-menu {
+        text-align: right;
+        display: block;
+    }
+
+    .toggle-menu svg {
+        width: 30px;
+    }
+}
