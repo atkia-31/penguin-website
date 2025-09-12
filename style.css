@@ -9,6 +9,7 @@ body {
 
 .toggle-menu svg {
     width: 30px;
+    margin-bottom: 30px;
 }
 
 .main-menu ul li a:hover {
@@ -18,8 +19,8 @@ body {
 
 .totop {
     background-color: rgba(0, 0, 0, 0.5);
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     position: fixed;
     right: 20px;
     bottom: 20px;
@@ -42,12 +43,19 @@ body {
     }
 
     .logo {
-        justify-items: center;
-        margin-bottom: 31px;
+
+        text-align: center;
+        margin-bottom: 30px;
     }
 
     .main-menu ul {
-        justify-content: center;
+        flex-direction: column;
+    }
+
+    .toggle-menu {
+        text-align: right;
+        display: block;
+        float: right;
     }
 
 }
