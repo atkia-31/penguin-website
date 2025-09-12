@@ -3,6 +3,14 @@ body {
     padding: 0;
 }
 
+.toggle-menu {
+    display: none;
+}
+
+.toggle-menu svg {
+    width: 30px;
+}
+
 .main-menu ul li a:hover {
     background-color: black;
     color: goldenrod;
@@ -10,6 +18,8 @@ body {
 
 .totop {
     background-color: rgba(0, 0, 0, 0.5);
+    width: 80px;
+    height: 80px;
     position: fixed;
     right: 20px;
     bottom: 20px;
@@ -18,15 +28,21 @@ body {
     display: none;
 }
 
+.totop svg {
+    color: #fff;
+}
+
+
+
 /* responsive */
 
-@media (max-width:767px) {
+@media (max-width:768px) {
     .header {
         flex-direction: column;
     }
 
     .logo {
-        text-align: center;
+        justify-items: center;
         margin-bottom: 31px;
     }
 
@@ -34,15 +50,12 @@ body {
         justify-content: center;
     }
 
-    .toggle-menu {}
-
-    .toggle-menu svg {
-        width: 30px;
-    }
 }
 
-@media (max-width:343px) {
+
+@media (max-width:350px) {
     .main-menu ul {
+        display: none;
         flex-direction: column;
     }
 
@@ -53,9 +66,5 @@ body {
     .toggle-menu {
         text-align: right;
         display: block;
-    }
-
-    .toggle-menu svg {
-        width: 30px;
     }
 }

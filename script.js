@@ -5,15 +5,20 @@ jQuery(".toggle-menu").click(function () {
 });
 
 jQuery(".totop").click(function () {
-    jQuery("html , body").animate({ "scrollTop": "0px" }, 3000);
+    jQuery("html , body").animate({ "scrollTop": "0px" }, 1000);
 });
 
-console.log(window);
+console.log(jQuery(window).scrollTop());
 
 jQuery(window).scroll(function () {
-    if (jQuery(window).scrollTop() > 0.5) {
+    if (jQuery(window).scrollTop() > 4000) {
         jQuery(".totop").fadeIn();
     } else {
         jQuery(".totop").fadeOut();
     }
+
 });
+
+
+
+
